@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "npm run reset && nodemon --require dotenv/config server.js",
+    "reset": "cd config && node --require dotenv/config reset.js"
   },
   "repository": {
     "type": "git",
